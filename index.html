@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudyTrack — organizator de teme</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="wrap">
+    <header class="app-header">
+      <h1>StudyTrack</h1>
+      <p>Ține evidența temelor și proiectelor pe materii, fără hârtii pierdute.</p>
+    </header>
+
+    <form class="task-form" id="taskForm">
+      <input type="text" id="taskInput" placeholder="ex: Rezolvă tema la Electronică de putere" required>
+      <select id="subjectInput">
+        <option value="general">General</option>
+        <option value="electronica">Electronică de putere</option>
+        <option value="telecom">Telecomunicații</option>
+        <option value="baze-date">Baze de date</option>
+        <option value="tv">Sisteme TV</option>
+      </select>
+      <input type="date" id="dueInput">
+      <button type="submit" class="btn-add">Adaugă</button>
+    </form>
+
+    <div class="task-toolbar">
+      <div class="tabs" id="tabs">
+        <button class="tab active" data-filter="toate">Toate</button>
+        <button class="tab" data-filter="active">Active</button>
+        <button class="tab" data-filter="done">Finalizate</button>
+      </div>
+      <span class="count" id="taskCount">0 sarcini</span>
+    </div>
+
+    <ul class="task-list" id="taskList"></ul>
+
+    <p class="empty-state" id="emptyState" hidden>Nimic aici — adaugă prima ta sarcină mai sus.</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
