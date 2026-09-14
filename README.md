@@ -1,2 +1,2 @@
 # studytrack
-Organizator de teme și proiecte pe materii, cu salvare locală (localStorage). Proiect de portofoliu — HTML, CSS, JavaScript vanilla.
+Second-hand clothing marketplace concept for the Romanian market — product listings, category filtering, listing form. Portfolio project.
